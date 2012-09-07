@@ -1,0 +1,6 @@
+
+<%= form_for @reminder do |f| %>
+  <%= f.text_field :description, :placeholder => "Reminder" %>
+	<%= f.text_field :phone_number, :placeholder => "Phone Number" %>
+  <%= f.submit "Create" %>
+<% end %>
