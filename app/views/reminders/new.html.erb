@@ -1,6 +1,12 @@
 
-<%= form_for @reminder do |f| %>
-  <%= f.text_field :description, :placeholder => "Reminder" %>
-	<%= f.text_field :phone_number, :placeholder => "Phone Number" %>
-  <%= f.submit "Create" %>
-<% end %>
+<div style="text-align:center">
+	
+	<h1> Create a Reminder </h1>
+	<%= form_for @reminder do |f| %>
+	  <%= f.text_field :description, :placeholder => "Reminder" %>
+		<%= f.text_field :phone_number, :placeholder => "Phone Number" %>
+	  <%= f.submit "Create" %>
+	<% end %>
+	
+	<%= render "shared/alerts" %>
+</div>
